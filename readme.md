@@ -1,4 +1,4 @@
-# SatTracker
+# MQTT N2YO TRACKER
 A simple app to publish satellite data to MQTT.
 Uses the N2YO.com API to retrieve the next time a satellite will pass overhead.
 
