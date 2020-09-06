@@ -21,5 +21,5 @@ This uses the following libraries / imports that you will require:
   * import paho.mqtt.client as mqtt
 
 
-Created 9/4/2020 by James O'Gorman
+Created 9/4/2020 by James O'Gorman & modified by kierran scown
 
