@@ -12,7 +12,7 @@ https://www.n2yo.com/api/#radiopasses
 
 MQTT Data will be published in the same format as the following image.
 
-![MQTT Data](/sattracker.png)
+![MQTT Data](/sattracker.PNG)
 
 This uses the following libraries / imports that you will require:
   * import requests  # used for HTTP Get requests
