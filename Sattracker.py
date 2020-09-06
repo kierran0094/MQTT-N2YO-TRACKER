@@ -14,7 +14,7 @@ import paho.mqtt.client as mqtt  # https://pypi.org/project/paho-mqtt/
 # Also update your MQTT broker ID listed down below.
 
 API_Key = "nnnnnn-vvvvvv-dddddd-wwww"  # Create free account with N2YO.com and get an API key
-NoradID = [28654, 41287, 33591, 25338, 90864]  # Norad ID of satellites wanted to be observed
+NoradID = [40069, 33591, 25338, 28654]  # Norad ID of satellites wanted to be observed
 observer_lat = 43.42528  # Float.  Observer's latitude (decimal degrees format)
 observer_lng = -88.18343  # Float. Observer's longitude (decimal degrees format)
 observer_alt = 500  # Float. Observer's altitude above sea level in meters
@@ -30,6 +30,7 @@ client = mqtt.Client()
 client.on_connect = on_connect
 
 print("Connecting to MQTT Broker... ")
+client.username_pw_set("username", "password")
 client.connect("192.168.n.n", 1883, 60)
 
 client.loop_start()  # background thread to maintain MQTT connection.
