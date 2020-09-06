@@ -18,7 +18,7 @@ NoradID = [40069, 33591, 25338, 28654]  # Norad ID of satellites wanted to be ob
 observer_lat = 43.42528  # Float.  Observer's latitude (decimal degrees format)
 observer_lng = -88.18343  # Float. Observer's longitude (decimal degrees format)
 observer_alt = 500  # Float. Observer's altitude above sea level in meters
-days = 10  # Integer. Number of days of prediction (max 10)
+days = 1  # Integer. Number of days of prediction (max 10)
 min_elevation = 40  # Integer. The minimum elevation acceptable for the highest altitude point of the pass (degrees)
 
 
@@ -78,7 +78,6 @@ for n in NoradID:
 
     else:
         client.publish("Sat/" + str(n) + "/Name", data['info']['satname'])
-        
         client.publish("Sat/" + str(n) + "/NextPass", convertTime(data['passes'][0]['startUTC']))
         client.publish("Sat/" + str(n) + "/SatID", data['info']['satid'])
         client.publish("Sat/" + str(n) + "/PassesCount", data['info']['passescount'])
