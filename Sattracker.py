@@ -77,9 +77,9 @@ for n in NoradID:
                        " days in the future.")
 
     else:
-        client.publish("Sat/" + str(n) + "/NextPass", convertTime(data['passes'][0]['startUTC']))
-
         client.publish("Sat/" + str(n) + "/Name", data['info']['satname'])
+        
+        client.publish("Sat/" + str(n) + "/NextPass", convertTime(data['passes'][0]['startUTC']))
         client.publish("Sat/" + str(n) + "/SatID", data['info']['satid'])
         client.publish("Sat/" + str(n) + "/PassesCount", data['info']['passescount'])
         client.publish("Sat/" + str(n) + "/startAZ", data['passes'][0]['startAz'])
