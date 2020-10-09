@@ -35,7 +35,7 @@ client.connect("192.168.n.n", 1883, 60)
 
 client.loop_start()  # background thread to maintain MQTT connection.
 
-BaseURL = "https://www.n2yo.com/rest/v1/satellite/radiopasses"
+BaseURL = "https://api.n2yo.com/rest/v1/satellite/radiopasses"
 
 # Convert from UTC timestamp to local
 from_zone = tz.gettz('UTC')  # The returned values are always UTC
