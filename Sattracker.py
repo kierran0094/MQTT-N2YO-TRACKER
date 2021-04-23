@@ -10,7 +10,7 @@ import paho.mqtt.client as mqtt  # https://pypi.org/project/paho-mqtt/
 
 
 #  Replace the NoradID values with ones appropriate for your needs.
-#  Don't forget to update observer_lat/lng with your position
+#  Don't forget to update observer_lat/lng with your position.
 #  Also update your MQTT broker ID listed down below.
 
 API_Key = "nnnnnn-vvvvvv-dddddd-wwww"  # Create free account with N2YO.com and get an API key
