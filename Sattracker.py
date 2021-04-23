@@ -9,7 +9,7 @@ from dateutil import tz  # used for converting timezones http://niemeyer.net/pyt
 import paho.mqtt.client as mqtt  # https://pypi.org/project/paho-mqtt/
 
 
-#  Replace the next 7 values with ones appropriate for your needs.
+#  Replace the NoradID values with ones appropriate for your needs.
 
 # Also update your MQTT broker ID listed down below.
 
